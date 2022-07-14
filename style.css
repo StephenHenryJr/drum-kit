@@ -2,7 +2,7 @@ html {
   font-size: 10px;
   /* background: url('./background.jpg') bottom center;
   background-size: cover; */
-  background-color: rgb(35, 35, 35);
+  background-color: var(--main--raisinBlack);
 }
 
 body,html {
@@ -13,8 +13,7 @@ body,html {
 
 :root {
   --main--raisinBlack: #232020;
-  --main--liver: #553739;
-  --main--brownSugar: #955E42;
+  --main-darkOrange: #fb8b24;
 }
 
 .keys {
@@ -37,14 +36,13 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  background: var(--main--raisinBlack);
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: var(--main-darkOrange);
+  box-shadow: 0 0 1rem var(--main-darkOrange);
 }
 
 kbd {
@@ -56,5 +54,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: var(--main-darkOrange);
 }
