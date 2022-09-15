@@ -12,7 +12,7 @@ function playSound(e) {
 // Simply removes class of playing
 // there are multiple transitions ending so we eliminate them all except for transform
 function removeTransition(e) {
-    if(e.propertyName !== 'transform') return // will skip the rest if not = to transform
+    // if(e.propertyName !== 'transform') return // will skip the rest if not = to transform
     this.classList.remove('playing'); // this is equal to whatever it is being called against which in this case is key
 }
 
